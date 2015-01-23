@@ -1,0 +1,10 @@
+name: yaml2toml
+version: 0.1.0
+authors: 
+- Justin Andresen <jan.dresen.95@gmail.com>
+description: Converts a YAML file to a TOML document.
+homepage: https://github.com/just95/yaml2toml.dart
+dependencies:
+  args: '>=0.12.2+2 <0.13.0'
+  toml: '>=0.1.0 <0.2.0'
+  yaml: '>=2.1.2 <3.0.0'
