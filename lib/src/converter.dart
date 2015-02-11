@@ -15,7 +15,7 @@ class Yaml2TomlConverter {
   /// Converts a YAML document to a TOML document.
   /// 
   /// [yaml] contains the contents of the YAML document.
-  /// Returns a [Future] of the generted TOML document.
+  /// Returns a future of the generted TOML document.
   Future<String> convert(String yaml){
     var encoder = new TomlEncoder();
     return new Future.microtask(
