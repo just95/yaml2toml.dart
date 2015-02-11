@@ -1,5 +1,5 @@
 name: yaml2toml
-version: 0.1.0
+version: 0.1.1
 authors: 
 - Justin Andresen <jan.dresen.95@gmail.com>
 description: Converts a YAML file to a TOML document.
