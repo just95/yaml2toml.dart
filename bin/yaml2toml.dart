@@ -1,6 +1,7 @@
 #!/usr/bin/env dart
 
 import 'package:args/args.dart';
+import 'package:path/path.dart';
 import 'package:yaml2toml/yaml2toml.dart';
 
 import 'dart:io';
@@ -31,9 +32,9 @@ void main(List<String> args) {
     
     if (help || input == null) throw '--help';
     
-    // output defaults to <input>.toml
+    // output defaults to <input>.toml in current working directory
     if (output == null) 
-      output = input.replaceFirst(new RegExp(r'\.yaml$'), '.toml');
+      output = '${basenameWithoutExtension(input)}.toml';
     
     // open in/output
     var yaml = new File(input);
